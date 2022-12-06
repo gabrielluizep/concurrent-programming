@@ -18,8 +18,11 @@ public class App {
         // System.err.println("Finalizando o programa");
 
         // 2º Part
-        Thread helloWorld = new HelloWorld();
+        // Thread helloWorld = new HelloWorld();
 
-        helloWorld.start();
+        // helloWorld.start();
+
+        // 3º Part - Ray Tracer
+        MakeMovieSequential.main(new String[] { "100" });
     }
 }
