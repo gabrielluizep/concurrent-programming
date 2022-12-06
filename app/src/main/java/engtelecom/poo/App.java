@@ -4,11 +4,16 @@
 package engtelecom.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Thread stream1 = new Stream1();
+        Thread stream2 = new Thread(new Stream2());
+
+        System.err.println("Iniciando o programa");
+
+        stream1.start();
+        stream2.start();
+
+        System.err.println("Finalizando o programa");
     }
 }
