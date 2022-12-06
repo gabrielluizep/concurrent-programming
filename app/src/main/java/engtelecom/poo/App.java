@@ -6,14 +6,20 @@ package engtelecom.poo;
 public class App {
 
     public static void main(String[] args) {
-        Thread stream1 = new Stream1();
-        Thread stream2 = new Thread(new Stream2());
+        // 1º Part
+        // Thread stream1 = new Stream1();
+        // Thread stream2 = new Thread(new Stream2());
 
-        System.err.println("Iniciando o programa");
+        // System.err.println("Iniciando o programa");
 
-        stream1.start();
-        stream2.start();
+        // stream1.start();
+        // stream2.start();
 
-        System.err.println("Finalizando o programa");
+        // System.err.println("Finalizando o programa");
+
+        // 2º Part
+        Thread helloWorld = new HelloWorld();
+
+        helloWorld.start();
     }
 }
